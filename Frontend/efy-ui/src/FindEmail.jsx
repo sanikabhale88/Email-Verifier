@@ -23,7 +23,7 @@ export default function FindEmail() {
     try {
       const token = localStorage.getItem("efy_token");
 
-      const res = await fetch("http://localhost:5000/api/find-email", {
+      const res = await fetch("https://email-verifier-backend-trf4.onrender.com/api/validate/csv", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -736,7 +736,7 @@ function FileUploadTab({ availableCredits, onDeductCredits }) {
       const formData = new FormData();
       formData.append("file", uploadedFile);
 
-      const response = await fetch("http://localhost:5000/validate/csv", {
+      const response = await fetch("https://email-verifier-backend-trf4.onrender.com/api/validate/csv", {
         method: "POST", body: formData,
       });
 
