@@ -1,0 +1,144 @@
+/* Layout */
+.fe-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: white;
+}
+
+/* Sidebar */
+.fe-sidebar {
+  width: 260px;
+  background: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.fe-logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0d6777;
+}
+
+/* Menu Button */
+.fe-menu-btn {
+  background: none;
+  border: 2px solid #ddd;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.fe-menu-btn.active {
+  background: linear-gradient(to right, #1ca7a3, #05536e);
+  color: white;
+  border: none;
+}
+
+/* Credits Box */
+.fe-credits-box {
+  background: linear-gradient(to right, #d7f3f2, #b0e0df);
+  padding: 12px 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fe-buy-btn {
+  padding: 12px 18px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #1ca7a3, #05536e);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* MAIN AREA */
+.fe-main {
+  flex: 1;
+  background: white;
+  position: relative;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+/* Wavy big gradient at top (SVG effect) */
+.fe-main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 45%;
+  background: linear-gradient(to right, #1ca7a3, #05536e);
+  clip-path: path("M0,100 C150,0 350,200 600,100 L900,0 L900,0 L0,0 Z");
+  z-index: -1;
+}
+
+/* Profile Bar */
+.fe-profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.fe-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.fe-title {
+  color: #0d6777;
+  font-size: 40px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+/* Input row */
+.fe-input-row {
+  display: flex;
+  gap: 20px;
+}
+
+.fe-input {
+  padding: 14px 20px;
+  border-radius: 30px;
+  border: 2px solid #ccc;
+  width: 240px;
+  font-size: 16px;
+}
+
+/* Find Email button */
+.fe-find-btn {
+  padding: 14px 30px;
+  border-radius: 30px;
+  background: linear-gradient(to right, #1ca7a3, #05536e);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Floating Help Button */
+.fe-help-btn {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  background: #05536e;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+}

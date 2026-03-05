@@ -1,0 +1,200 @@
+/* OVERLAY */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.show {
+  opacity: 1;
+}
+
+/* CARD */
+.modal-card {
+  background: linear-gradient(160deg, #0e7a8a 0%, #0b5563 60%, #083f4d 100%);
+  border-radius: 24px;
+  padding: 50px 60px 44px;
+  width: 460px;
+  max-width: 90vw;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+  transform: scale(0.85) translateY(30px);
+  opacity: 0;
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.modal-card.show {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+/* GIFT ICON */
+.modal-gift {
+  font-size: 58px;
+  margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+  animation: giftBounce 2s infinite ease-in-out;
+}
+
+@keyframes giftBounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+/* Sparkles */
+.sparkle {
+  position: absolute;
+  color: #fde68a;
+  font-size: 20px;
+  font-weight: bold;
+  animation: sparklePop 1.5s infinite ease-in-out;
+}
+
+.s1 { top: -4px;  right: -6px;  animation-delay: 0s;    font-size: 14px; }
+.s2 { top: 10px;  left: -10px;  animation-delay: 0.5s;  font-size: 10px; }
+.s3 { bottom: 0;  right: -14px; animation-delay: 1s;    font-size: 16px; }
+
+@keyframes sparklePop {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50%       { opacity: 1;   transform: scale(1.3); }
+}
+
+/* LINE */
+.modal-line {
+  width: 60px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  margin: 0 auto 28px;
+}
+
+/* WELCOME TEXT */
+.modal-welcome {
+  font-size: 26px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 28px;
+  letter-spacing: 0.3px;
+}
+
+/* CREDITS TEXT */
+.modal-credits {
+  margin-bottom: 12px;
+  line-height: 1.1;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.credits-get {
+  font-size: 22px;
+  color: rgba(255,255,255,0.85);
+  font-weight: 400;
+}
+
+.credits-number {
+  font-size: 72px;
+  font-weight: 800;
+  color: white;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.credits-free {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+}
+
+.credits-label {
+  font-size: 22px;
+  color: rgba(255,255,255,0.85);
+  font-weight: 400;
+}
+
+/* SUBTITLE */
+.modal-subtitle {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 36px;
+  line-height: 1.5;
+}
+
+/* BUTTON */
+.modal-btn {
+  width: 100%;
+  padding: 16px;
+  background: white;
+  color: #0b5563;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+.modal-btn:hover {
+  background: #f0fdfd;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-btn:active {
+  transform: translateY(0);
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15); /* light dark layer */
+  
+  backdrop-filter: blur(12px);   /* 🔥 This creates the blur */
+  -webkit-backdrop-filter: blur(12px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
+
+.modal-overlay.show {
+  opacity: 1;
+
+
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.show {
+  opacity: 1;
+}
