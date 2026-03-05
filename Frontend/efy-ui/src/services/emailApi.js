@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://email-verifier-backend-trf4.onrender.com/api";
 
 export const validateSingleEmail = async (email) => {
   const res = await fetch(`${BASE_URL}/validate`, {

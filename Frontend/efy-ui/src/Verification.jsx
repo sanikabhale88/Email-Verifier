@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./Login.css";
 
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = "https://email-verifier-backend-trf4.onrender.com/api";
 
 function Verification() {
   const navigate = useNavigate();

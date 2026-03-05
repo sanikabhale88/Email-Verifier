@@ -4,7 +4,7 @@ import "./ChangePassword.css";
 import { FaLock } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = "https://email-verifier-backend-trf4.onrender.com/api";
 
 export default function ChangePassword() {
   const navigate = useNavigate();
